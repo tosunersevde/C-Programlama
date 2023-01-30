@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1627917485 source:c:\projelerim\yidizlarla_harf_odevi\main.c
+	<stdio.h>
+	<stdlib.h>
+
