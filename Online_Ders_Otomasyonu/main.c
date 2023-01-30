@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
-//Sevde Nur Tosuner 20010011044
 
 typedef struct ders_bilgileri
 {
@@ -168,12 +167,12 @@ void Kayit_Guncelleme(int ogrenci){
             printf("%d.Dersin Fiyati: %d\n",i+1,(((og+(ogrenci-1))->dersler)+i)->ders_fiyat);
             printf("\n");
         }
-        printf("Güncellemek Istediginiz Dersin Numarasini Giriniz: ");
+        printf("GÃ¼ncellemek Istediginiz Dersin Numarasini Giriniz: ");
         int ders;
         scanf("%d",&ders);
 
         if(ders<=0||ders>(og+(ogrenci-1))->ders_sayi){
-            printf("Böyle Bir Ders Bulunmamaktadir!");
+            printf("BÃ¶yle Bir Ders Bulunmamaktadir!");
         }else{
             printf("%d.Dersin Yeni Fiyati: ",ders);
             scanf("%d",&(((og+(ogrenci-1))->dersler)+(ders-1))->ders_fiyat);
@@ -184,12 +183,12 @@ void Kayitlari_Listeleme()
 {
     for(int i=0; i<ogr_sayi; i++)
     {
-        printf("%d.Ögrencinin Adi:%s \n",i+1,(og+i)->ad);
-        printf("%d.Ögrencinin Soyadi:%s \n",i+1,(og+i)->soyad);
-        printf("%d.Ögrencinin Yasi:%d \n",i+1,(og+i)->yas);
-        printf("%d.Ögrencinin Dogum Yeri:%s \n",i+1,(og+i)->dogum_yeri);
-        printf("%d.Ögrencinin Dogum Tarihi:%s \n",i+1,(og+i)->dogum_tarihi);
-        printf("%d.Ögrencinin Ders Sayisi:%d \n",i+1,(og+i)->ders_sayi);
+        printf("%d.Ã–grencinin Adi:%s \n",i+1,(og+i)->ad);
+        printf("%d.Ã–grencinin Soyadi:%s \n",i+1,(og+i)->soyad);
+        printf("%d.Ã–grencinin Yasi:%d \n",i+1,(og+i)->yas);
+        printf("%d.Ã–grencinin Dogum Yeri:%s \n",i+1,(og+i)->dogum_yeri);
+        printf("%d.Ã–grencinin Dogum Tarihi:%s \n",i+1,(og+i)->dogum_tarihi);
+        printf("%d.Ã–grencinin Ders Sayisi:%d \n",i+1,(og+i)->ders_sayi);
         printf("\n");
         for(int j=0; j<(og+i)->ders_sayi; j++)
         {
@@ -230,7 +229,7 @@ void Fiyat_Hesaplama()
             top_fiyat+=((og+i)->dersler+j)->ders_fiyat;
         }
         (og+i)->toplam_fiyat=top_fiyat;
-        printf("%d.Ögrencinin Adi:%s \n",i+1,(og+i)->ad);
-        printf("%d.Ögrencinin Derslerinin Toplam Fiyati:%d \n",i+1,(og+i)->toplam_fiyat);
+        printf("%d.Ã–grencinin Adi:%s \n",i+1,(og+i)->ad);
+        printf("%d.Ã–grencinin Derslerinin Toplam Fiyati:%d \n",i+1,(og+i)->toplam_fiyat);
     }
 }
