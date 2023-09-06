@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1638034621 source:c:\users\tosun\onedrive\belgeler\github\c-programlama\hesap_makinesi\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
